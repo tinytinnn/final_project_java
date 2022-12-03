@@ -162,6 +162,9 @@ public class LoginUsers extends javax.swing.JFrame {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jnameFocusGained(evt);
             }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                jnameFocusLost(evt);
+            }
         });
         jname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -206,6 +209,11 @@ public class LoginUsers extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Palatino Linotype", 0, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 153, 0));
         jLabel8.setText("Click to Register");
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -298,6 +306,7 @@ public class LoginUsers extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jnameActionPerformed
@@ -325,6 +334,18 @@ public class LoginUsers extends javax.swing.JFrame {
         // TODO add your handling code here:
         jpassword.setText("");
     }//GEN-LAST:event_jpasswordFocusGained
+
+    private void jnameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jnameFocusLost
+        // TODO add your handling code here:
+        String name = jname.getText();
+        jname.setText(name);
+    }//GEN-LAST:event_jnameFocusLost
+
+    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+        // TODO add your handling code here:
+        this.setVisible(false);
+        new RegisterUsers().setVisible(true);
+    }//GEN-LAST:event_jLabel8MouseClicked
 
     /**
      * @param args the command line arguments
