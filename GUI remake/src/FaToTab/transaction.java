@@ -1,8 +1,10 @@
+
+import java.awt.Color;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-
 /**
  *
  * @author Student.Admin
@@ -108,6 +110,14 @@ public class transaction extends javax.swing.JFrame {
         jLabel2.setText("Username");
 
         jPanel8.setBackground(new java.awt.Color(44, 116, 60));
+        jPanel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel8MouseExited(evt);
+            }
+        });
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/home.png"))); // NOI18N
 
@@ -137,6 +147,14 @@ public class transaction extends javax.swing.JFrame {
         );
 
         jPanel10.setBackground(new java.awt.Color(44, 116, 60));
+        jPanel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel10MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel10MouseExited(evt);
+            }
+        });
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/choose.png"))); // NOI18N
 
@@ -166,6 +184,14 @@ public class transaction extends javax.swing.JFrame {
         );
 
         jPanel11.setBackground(new java.awt.Color(44, 116, 60));
+        jPanel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel11MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel11MouseExited(evt);
+            }
+        });
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/admin.png"))); // NOI18N
 
@@ -199,6 +225,14 @@ public class transaction extends javax.swing.JFrame {
         jLabel9.setText("Support");
 
         jPanel12.setBackground(new java.awt.Color(44, 116, 60));
+        jPanel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel12MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel12MouseExited(evt);
+            }
+        });
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/settings.png"))); // NOI18N
 
@@ -228,6 +262,14 @@ public class transaction extends javax.swing.JFrame {
         );
 
         jPanel13.setBackground(new java.awt.Color(44, 116, 60));
+        jPanel13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel13MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel13MouseExited(evt);
+            }
+        });
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logout.png"))); // NOI18N
 
@@ -328,6 +370,14 @@ public class transaction extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
         jPanel5.setBackground(new java.awt.Color(255, 204, 51));
+        jPanel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel5MouseExited(evt);
+            }
+        });
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/magnifying-glass.png"))); // NOI18N
 
@@ -392,6 +442,14 @@ public class transaction extends javax.swing.JFrame {
         });
 
         jPanel14.setBackground(new java.awt.Color(255, 204, 51));
+        jPanel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel14MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel14MouseExited(evt);
+            }
+        });
 
         jLabel19.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel19.setText("Filter");
@@ -539,9 +597,76 @@ public class transaction extends javax.swing.JFrame {
         jLabel15.setText("");
     }//GEN-LAST:event_jLabel15FocusGained
 
-    /**
-     * @param args the command line arguments
-     */
+    private void jPanel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseEntered
+        // TODO add your handling code here:
+        jPanel8.setBackground(new Color(35, 77, 32));
+    }//GEN-LAST:event_jPanel8MouseEntered
+
+    private void jPanel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseExited
+        // TODO add your handling code here:
+        jPanel8.setBackground(new Color(44, 116, 60));
+    }//GEN-LAST:event_jPanel8MouseExited
+
+    private void jPanel10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel10MouseEntered
+        // TODO add your handling code here:
+        jPanel10.setBackground(new Color(35, 77, 32));
+    }//GEN-LAST:event_jPanel10MouseEntered
+
+    private void jPanel10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel10MouseExited
+        // TODO add your handling code here:
+        jPanel10.setBackground(new Color(44, 116, 60));
+    }//GEN-LAST:event_jPanel10MouseExited
+
+    private void jPanel11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MouseEntered
+        // TODO add your handling code here:
+        jPanel11.setBackground(new Color(35, 77, 32));
+    }//GEN-LAST:event_jPanel11MouseEntered
+
+    private void jPanel11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MouseExited
+        // TODO add your handling code here:
+        jPanel11.setBackground(new Color(44, 116, 60));
+    }//GEN-LAST:event_jPanel11MouseExited
+
+    private void jPanel12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel12MouseEntered
+        // TODO add your handling code here:
+        jPanel12.setBackground(new Color(35, 77, 32));
+    }//GEN-LAST:event_jPanel12MouseEntered
+
+    private void jPanel12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel12MouseExited
+        // TODO add your handling code here:
+        jPanel12.setBackground(new Color(44, 116, 60));
+    }//GEN-LAST:event_jPanel12MouseExited
+
+    private void jPanel13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel13MouseEntered
+        // TODO add your handling code here:
+        jPanel13.setBackground(new Color(35, 77, 32));
+    }//GEN-LAST:event_jPanel13MouseEntered
+
+    private void jPanel13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel13MouseExited
+        // TODO add your handling code here:
+        jPanel13.setBackground(new Color(44, 116, 60));
+    }//GEN-LAST:event_jPanel13MouseExited
+
+    private void jPanel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseEntered
+        // TODO add your handling code here:
+        jPanel5.setBackground(new Color(249, 233, 9));
+    }//GEN-LAST:event_jPanel5MouseEntered
+
+    private void jPanel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseExited
+        // TODO add your handling code here:
+        jPanel5.setBackground(new Color(255, 204, 51));
+    }//GEN-LAST:event_jPanel5MouseExited
+
+    private void jPanel14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel14MouseEntered
+        // TODO add your handling code here:
+        jPanel14.setBackground(new Color(249, 233, 9));
+    }//GEN-LAST:event_jPanel14MouseEntered
+
+    private void jPanel14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel14MouseExited
+        // TODO add your handling code here:
+        jPanel14.setBackground(new Color(255, 204, 51));
+    }//GEN-LAST:event_jPanel14MouseExited
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
