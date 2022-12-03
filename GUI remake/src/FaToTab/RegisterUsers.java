@@ -27,16 +27,14 @@ public class RegisterUsers extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel2 = new javax.swing.JLabel();
+        jsave = new javax.swing.JButton();
+        date1 = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        date = new javax.swing.JTextField();
-        time = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        date2 = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jconfirmpassword = new javax.swing.JTextField();
         jname = new javax.swing.JTextField();
@@ -55,8 +53,25 @@ public class RegisterUsers extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jrole = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
+        jreset = new javax.swing.JButton();
+        jsave1 = new javax.swing.JButton();
 
         jLabel2.setText("jLabel2");
+
+        jsave.setBackground(new java.awt.Color(255, 255, 153));
+        jsave.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jsave.setText("Submit");
+        jsave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jsaveActionPerformed(evt);
+            }
+        });
+
+        date1.setBackground(new java.awt.Color(51, 51, 51));
+        date1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        date1.setForeground(new java.awt.Color(255, 51, 51));
+        date1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        date1.setText("0");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(769, 580));
@@ -65,61 +80,6 @@ public class RegisterUsers extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setToolTipText("");
-
-        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel12.setFont(new java.awt.Font("Palatino Linotype", 0, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 51, 0));
-        jLabel12.setText("Date:");
-
-        jLabel13.setBackground(new java.awt.Color(51, 51, 51));
-        jLabel13.setFont(new java.awt.Font("Palatino Linotype", 0, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(0, 51, 0));
-        jLabel13.setText("Time:");
-
-        date.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        date.setForeground(new java.awt.Color(0, 51, 0));
-        date.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        date.setText("0");
-        date.setBorder(null);
-        date.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                dateActionPerformed(evt);
-            }
-        });
-
-        time.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        time.setForeground(new java.awt.Color(0, 51, 0));
-        time.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        time.setText("0");
-        time.setBorder(null);
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(jLabel12)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(date, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(126, 126, 126)
-                .addComponent(jLabel13)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(time, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel13)
-                    .addComponent(date, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(time, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(47, Short.MAX_VALUE))
-        );
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Login-rafiki.png"))); // NOI18N
 
@@ -131,31 +91,46 @@ public class RegisterUsers extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(255, 153, 0));
         jLabel5.setText("Farm-To-Table E-market");
 
+        date2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        date2.setForeground(new java.awt.Color(255, 51, 51));
+        date2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        date2.setText("0");
+        date2.setBorder(null);
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(59, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jLabel5)
-                        .addComponent(jLabel3)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addComponent(jLabel5)))
                 .addGap(23, 23, 23))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(71, 71, 71)
+                        .addComponent(jLabel3))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(date2, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(53, 53, 53)
                 .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(47, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(date2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         jPanel3.setBackground(new java.awt.Color(44, 116, 60));
@@ -245,6 +220,24 @@ public class RegisterUsers extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("create account");
 
+        jreset.setBackground(new java.awt.Color(255, 204, 51));
+        jreset.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jreset.setText("Reset");
+        jreset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jresetActionPerformed(evt);
+            }
+        });
+
+        jsave1.setBackground(new java.awt.Color(255, 204, 51));
+        jsave1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jsave1.setText("Submit");
+        jsave1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jsave1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -297,6 +290,12 @@ public class RegisterUsers extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(66, 66, 66))))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(81, 81, 81)
+                .addComponent(jreset, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(41, 41, 41)
+                .addComponent(jsave1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -339,7 +338,11 @@ public class RegisterUsers extends javax.swing.JFrame {
                 .addComponent(jLabel14)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jrole, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jreset, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jsave1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -377,10 +380,6 @@ public class RegisterUsers extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void dateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dateActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_dateActionPerformed
-
     private void jconfirmpasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jconfirmpasswordActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jconfirmpasswordActionPerformed
@@ -412,6 +411,138 @@ public class RegisterUsers extends javax.swing.JFrame {
     private void jroleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jroleActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jroleActionPerformed
+
+    private void jresetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jresetActionPerformed
+        // TODO add your handling code here:
+
+        jname.setText("");
+        jpassword.setText("");
+        jconfirmpassword.setText("");
+        jemailid1.setText("");
+        jphone.setText("");
+        jgender.setText("");
+        jage.setText("");
+        jrole.setSelectedIndex(0);
+
+    }//GEN-LAST:event_jresetActionPerformed
+
+    private void jsaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jsaveActionPerformed
+        // TODO add your handling code here:
+
+        String username = jname.getText();
+        String password = String.valueOf(jpassword.getText());
+        String conpassword = String.valueOf(jconfirmpassword.getText());
+        String email_id = jemailid1.getText();
+        String gender = jgender.getText();
+        String age = jage.getText();
+        //        int age = Integer.parseInt(jage.getText());
+        String role;
+        String phone = jphone.getText();
+        String datea = date.getText();
+        role = jrole.getSelectedItem().toString();
+        //          Date datee= jDate.getDate();
+        //
+        String status = "Inactive";
+
+        if (username.trim().equals("") || username.trim().equals("")
+                || password.trim().equals("") || password.trim().equals("")
+                || conpassword.trim().equals("") || conpassword.trim().equals("")
+                || email_id.trim().equals("") || email_id.trim().equals("")
+                || gender.trim().equals("") || gender.trim().equals("")
+                || phone.trim().equals("") || phone.trim().equals("")
+                || age.trim().equals("") || age.trim().equals("")) {
+            JOptionPane.showMessageDialog(null, "Other fields are empty!");
+        } else if (password.equals(conpassword)) {
+
+        } else {
+
+            JOptionPane.showMessageDialog(null, "Password and Confirm Password must be same!!");
+            jpassword.setText("");
+            jconfirmpassword.setText("");
+        }
+        if (jname.getText().length() <= 0
+                || jpassword.getText().length() <= 0
+                || jconfirmpassword.getText().length() <= 0
+                || jphone.getText().length() <= 0
+                || jemailid1.getText().length() <= 0
+                || //                jDate.getDate().length() ||
+                jgender.getText().length() <= 0
+                || jage.getText().length() <= 0) {
+
+        } else {
+            JOptionPane.showMessageDialog(null, "Form submitted!");
+            approveuser();
+            jname.setText("");
+            jpassword.setText("");
+            jconfirmpassword.setText("");
+            jphone.setText("");
+            jemailid1.setText("");
+            jgender.setText("");
+            jage.setText("");
+            jrole.setSelectedIndex(0);
+
+        }
+
+    }//GEN-LAST:event_jsaveActionPerformed
+
+    private void jsave1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jsave1ActionPerformed
+        // TODO add your handling code here:
+
+        String username = jname.getText();
+        String password = String.valueOf(jpassword.getText());
+        String conpassword = String.valueOf(jconfirmpassword.getText());
+        String email_id = jemailid1.getText();
+        String gender = jgender.getText();
+        String age = jage.getText();
+        //        int age = Integer.parseInt(jage.getText());
+        String role;
+        String phone = jphone.getText();
+        String datea = date.getText();
+        role = jrole.getSelectedItem().toString();
+        //          Date datee= jDate.getDate();
+        //
+        String status = "Inactive";
+
+        if (username.trim().equals("") || username.trim().equals("")
+                || password.trim().equals("") || password.trim().equals("")
+                || conpassword.trim().equals("") || conpassword.trim().equals("")
+                || email_id.trim().equals("") || email_id.trim().equals("")
+                || gender.trim().equals("") || gender.trim().equals("")
+                || phone.trim().equals("") || phone.trim().equals("")
+                || age.trim().equals("") || age.trim().equals("")) {
+            JOptionPane.showMessageDialog(null, "Other fields are empty!");
+        } else if (password.equals(conpassword)) {
+
+        } else {
+
+            JOptionPane.showMessageDialog(null, "Password and Confirm Password must be same!!");
+            jpassword.setText("");
+            jconfirmpassword.setText("");
+        }
+        if (jname.getText().length() <= 0
+                || jpassword.getText().length() <= 0
+                || jconfirmpassword.getText().length() <= 0
+                || jphone.getText().length() <= 0
+                || jemailid1.getText().length() <= 0
+                || //                jDate.getDate().length() ||
+                jgender.getText().length() <= 0
+                || jage.getText().length() <= 0) {
+
+        } else {
+            JOptionPane.showMessageDialog(null, "Form submitted!");
+            approveuser();
+            jname.setText("");
+            jpassword.setText("");
+            jconfirmpassword.setText("");
+            jphone.setText("");
+            jemailid1.setText("");
+            jgender.setText("");
+            jage.setText("");
+            jrole.setSelectedIndex(0);
+
+        }
+
+    }//GEN-LAST:event_jsave1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -449,12 +580,11 @@ public class RegisterUsers extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField date;
+    private javax.swing.JTextField date1;
+    private javax.swing.JTextField date2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
@@ -468,7 +598,6 @@ public class RegisterUsers extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JTextField jage;
     private javax.swing.JTextField jconfirmpassword;
     private javax.swing.JTextField jemailid1;
@@ -476,7 +605,9 @@ public class RegisterUsers extends javax.swing.JFrame {
     private javax.swing.JTextField jname;
     private javax.swing.JTextField jpassword;
     private javax.swing.JTextField jphone;
+    private javax.swing.JButton jreset;
     private javax.swing.JComboBox<String> jrole;
-    private javax.swing.JTextField time;
+    private javax.swing.JButton jsave;
+    private javax.swing.JButton jsave1;
     // End of variables declaration//GEN-END:variables
 }
