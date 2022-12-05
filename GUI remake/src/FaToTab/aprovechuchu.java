@@ -4,26 +4,16 @@
  */
 package FaToTab;
 
-import java.awt.Color;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.table.DefaultTableModel;
-
 /**
  *
  * @author Student.Admin
  */
-public class ApprovedUsers extends javax.swing.JFrame {
+public class aprovechuchu extends javax.swing.JFrame {
 
     /**
-     * Creates new form ApprovedUsers
+     * Creates new form aprovechuchu
      */
-    public ApprovedUsers() {
+    public aprovechuchu() {
         initComponents();
     }
 
@@ -36,8 +26,6 @@ public class ApprovedUsers extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable11 = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
@@ -46,8 +34,8 @@ public class ApprovedUsers extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTable13 = new javax.swing.JTable();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable11 = new javax.swing.JTable();
         jadd = new javax.swing.JButton();
         jclear = new javax.swing.JButton();
         jUpdate = new javax.swing.JButton();
@@ -63,15 +51,15 @@ public class ApprovedUsers extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
-        jemailid = new javax.swing.JTextField();
-        jage = new javax.swing.JTextField();
-        jgender = new javax.swing.JTextField();
-        jname = new javax.swing.JTextField();
-        jpassword = new javax.swing.JPasswordField();
-        jconfirmpassword = new javax.swing.JPasswordField();
+        jemailid1 = new javax.swing.JTextField();
+        jage1 = new javax.swing.JTextField();
+        jgender1 = new javax.swing.JTextField();
+        jname1 = new javax.swing.JTextField();
+        jpassword1 = new javax.swing.JPasswordField();
+        jconfirmpassword1 = new javax.swing.JPasswordField();
         jLabel6 = new javax.swing.JLabel();
-        jrole = new javax.swing.JComboBox<>();
-        jstatus = new javax.swing.JComboBox<>();
+        jrole1 = new javax.swing.JComboBox<>();
+        jstatus1 = new javax.swing.JComboBox<>();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
@@ -80,21 +68,6 @@ public class ApprovedUsers extends javax.swing.JFrame {
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
-
-        jTable11.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Id", "Username", "Password", "Email_id", "Gender", "Age", "Role", "Status"
-            }
-        ));
-        jTable11.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTable11MouseClicked(evt);
-            }
-        });
-        jScrollPane1.setViewportView(jTable11);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -184,7 +157,7 @@ public class ApprovedUsers extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(44, 116, 60));
 
-        jTable13.setModel(new javax.swing.table.DefaultTableModel(
+        jTable11.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -192,12 +165,12 @@ public class ApprovedUsers extends javax.swing.JFrame {
                 "Id", "Username", "Password", "Email_id", "Gender", "Age", "Role", "Status"
             }
         ));
-        jTable13.addMouseListener(new java.awt.event.MouseAdapter() {
+        jTable11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTable13MouseClicked(evt);
+                jTable11MouseClicked(evt);
             }
         });
-        jScrollPane3.setViewportView(jTable13);
+        jScrollPane1.setViewportView(jTable11);
 
         jadd.setBackground(new java.awt.Color(255, 204, 51));
         jadd.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -250,14 +223,14 @@ public class ApprovedUsers extends javax.swing.JFrame {
                         .addComponent(jUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 541, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 541, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(16, 16, 16))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(28, 28, 28)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -392,32 +365,27 @@ public class ApprovedUsers extends javax.swing.JFrame {
 
         jPanel9.setBackground(new java.awt.Color(255, 255, 255));
 
-        jemailid.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jemailid.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jemailidActionPerformed(evt);
-            }
-        });
+        jemailid1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
 
-        jage.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jage1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
 
-        jgender.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jgender1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
 
-        jname.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jname1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
 
-        jpassword.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jpassword1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
 
-        jconfirmpassword.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jconfirmpassword1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
 
         jLabel6.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 51, 0));
         jLabel6.setText("Cashier User Data");
 
-        jrole.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jrole.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cashier", "Staff", " " }));
+        jrole1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jrole1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cashier", "Staff", " " }));
 
-        jstatus.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jstatus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Active", "Inactive" }));
+        jstatus1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jstatus1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Active", "Inactive" }));
 
         jLabel30.setFont(new java.awt.Font("Segoe UI Historic", 0, 14)); // NOI18N
         jLabel30.setText("Password");
@@ -461,11 +429,11 @@ public class ApprovedUsers extends javax.swing.JFrame {
                                     .addComponent(jLabel37))
                                 .addGap(105, 105, 105)
                                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jgender, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jemailid, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jage, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jrole, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jstatus, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(jgender1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jemailid1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jage1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jrole1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jstatus1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel9Layout.createSequentialGroup()
                                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel31)
@@ -473,9 +441,9 @@ public class ApprovedUsers extends javax.swing.JFrame {
                                     .addComponent(jLabel32))
                                 .addGap(41, 41, 41)
                                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jpassword, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jname, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jconfirmpassword, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(jpassword1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jname1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jconfirmpassword1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addGap(115, 115, 115)
                         .addComponent(jLabel6)))
@@ -488,35 +456,35 @@ public class ApprovedUsers extends javax.swing.JFrame {
                 .addComponent(jLabel6)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jname, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jname1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jpassword, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jpassword1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jconfirmpassword, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jconfirmpassword1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(20, 20, 20)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jemailid, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jemailid1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(20, 20, 20)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jgender, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jgender1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jage, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jage1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(16, 16, 16)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jrole, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jrole1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jstatus, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jstatus1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
@@ -574,7 +542,9 @@ public class ApprovedUsers extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -585,6 +555,36 @@ public class ApprovedUsers extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void HomeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HomeMouseEntered
+        // TODO add your handling code here:
+        Home.setBackground(new Color(35, 77, 32));
+    }//GEN-LAST:event_HomeMouseEntered
+
+    private void HomeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HomeMouseExited
+        // TODO add your handling code here:
+        Home.setBackground(new Color(44, 116, 60));
+    }//GEN-LAST:event_HomeMouseExited
+
+    private void jPanel12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel12MouseEntered
+        // TODO add your handling code here:
+        jPanel12.setBackground(new Color(35, 77, 32));
+    }//GEN-LAST:event_jPanel12MouseEntered
+
+    private void jPanel12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel12MouseExited
+        // TODO add your handling code here:
+        jPanel12.setBackground(new Color(44, 116, 60));
+    }//GEN-LAST:event_jPanel12MouseExited
+
+    private void jPanel13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel13MouseEntered
+        // TODO add your handling code here:
+        jPanel13.setBackground(new Color(35, 77, 32));
+    }//GEN-LAST:event_jPanel13MouseEntered
+
+    private void jPanel13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel13MouseExited
+        // TODO add your handling code here:
+        jPanel13.setBackground(new Color(44, 116, 60));
+    }//GEN-LAST:event_jPanel13MouseExited
 
     private void jTable11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable11MouseClicked
         // TODO add your handling code here:
@@ -624,55 +624,6 @@ public class ApprovedUsers extends javax.swing.JFrame {
 
         jadd.setEnabled(false);
     }//GEN-LAST:event_jTable11MouseClicked
-
-    private void HomeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HomeMouseEntered
-        // TODO add your handling code here:
-        Home.setBackground(new Color(35, 77, 32));
-    }//GEN-LAST:event_HomeMouseEntered
-
-    private void HomeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HomeMouseExited
-        // TODO add your handling code here:
-        Home.setBackground(new Color(44, 116, 60));
-    }//GEN-LAST:event_HomeMouseExited
-
-    private void jTable13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable13MouseClicked
-        // TODO add your handling code here:
-
-        DefaultTableModel model2 = (DefaultTableModel) jTable11.getModel();
-        int Myindex = jTable11.getSelectedRow();
-        int Mycolumn = jTable11.getSelectedColumn();
-
-        String value = model2.getValueAt(Myindex, Mycolumn).toString();
-
-        int id = Integer.parseInt(model2.getValueAt(Myindex, 0).toString());
-        jname.setText(model2.getValueAt(Myindex, 1).toString());
-        jpassword.setText(model2.getValueAt(Myindex, 2).toString());
-        jemailid.setText(model2.getValueAt(Myindex, 3).toString());
-        jgender.setText(model2.getValueAt(Myindex, 4).toString());
-        jage.setText(model2.getValueAt(Myindex, 5).toString());
-        String rolea = model2.getValueAt(Myindex, 6).toString();
-
-        switch (rolea) {
-            case "cashier":
-                jrole.setSelectedIndex(0);
-                break;
-            case "role":
-                jrole.setSelectedIndex(0);
-                break;
-        }
-
-        String statusa = model2.getValueAt(Myindex, 7).toString();
-        switch (statusa) {
-            case "active":
-                jstatus.setSelectedIndex(0);
-                break;
-            case "inactive":
-                jstatus.setSelectedIndex(0);
-                break;
-        }
-
-        jadd.setEnabled(false);
-    }//GEN-LAST:event_jTable13MouseClicked
 
     private void jaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jaddActionPerformed
         // TODO add your handling code here:
@@ -849,30 +800,6 @@ public class ApprovedUsers extends javax.swing.JFrame {
         jadd.setEnabled(true);
     }//GEN-LAST:event_jDeleteActionPerformed
 
-    private void jPanel12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel12MouseEntered
-        // TODO add your handling code here:
-        jPanel12.setBackground(new Color(35, 77, 32));
-    }//GEN-LAST:event_jPanel12MouseEntered
-
-    private void jPanel12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel12MouseExited
-        // TODO add your handling code here:
-        jPanel12.setBackground(new Color(44, 116, 60));
-    }//GEN-LAST:event_jPanel12MouseExited
-
-    private void jPanel13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel13MouseEntered
-        // TODO add your handling code here:
-        jPanel13.setBackground(new Color(35, 77, 32));
-    }//GEN-LAST:event_jPanel13MouseEntered
-
-    private void jPanel13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel13MouseExited
-        // TODO add your handling code here:
-        jPanel13.setBackground(new Color(44, 116, 60));
-    }//GEN-LAST:event_jPanel13MouseExited
-
-    private void jemailidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jemailidActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jemailidActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -890,20 +817,20 @@ public class ApprovedUsers extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ApprovedUsers.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(aprovechuchu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ApprovedUsers.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(aprovechuchu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ApprovedUsers.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(aprovechuchu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ApprovedUsers.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(aprovechuchu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ApprovedUsers().setVisible(true);
+                new aprovechuchu().setVisible(true);
             }
         });
     }
@@ -939,19 +866,17 @@ public class ApprovedUsers extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane3;
-    public static javax.swing.JTable jTable11;
-    public static javax.swing.JTable jTable13;
+    private javax.swing.JTable jTable11;
     private javax.swing.JButton jUpdate;
     private javax.swing.JButton jadd;
-    public javax.swing.JTextField jage;
+    public javax.swing.JTextField jage1;
     private javax.swing.JButton jclear;
-    public javax.swing.JPasswordField jconfirmpassword;
-    public javax.swing.JTextField jemailid;
-    public javax.swing.JTextField jgender;
-    public javax.swing.JTextField jname;
-    public javax.swing.JPasswordField jpassword;
-    private javax.swing.JComboBox<String> jrole;
-    private javax.swing.JComboBox<String> jstatus;
+    public javax.swing.JPasswordField jconfirmpassword1;
+    public javax.swing.JTextField jemailid1;
+    public javax.swing.JTextField jgender1;
+    public javax.swing.JTextField jname1;
+    public javax.swing.JPasswordField jpassword1;
+    private javax.swing.JComboBox<String> jrole1;
+    private javax.swing.JComboBox<String> jstatus1;
     // End of variables declaration//GEN-END:variables
 }
