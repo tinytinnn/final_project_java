@@ -5,12 +5,6 @@
 package FaToTab;
 
 import java.awt.Color;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -45,6 +39,7 @@ public class ApprovedUsers extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable13 = new javax.swing.JTable();
@@ -52,6 +47,7 @@ public class ApprovedUsers extends javax.swing.JFrame {
         jclear = new javax.swing.JButton();
         jUpdate = new javax.swing.JButton();
         jDelete = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
@@ -161,13 +157,20 @@ public class ApprovedUsers extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/profile.png"))); // NOI18N
 
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Username");
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(jLabel1)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel2)))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(113, Short.MAX_VALUE))
@@ -179,7 +182,9 @@ public class ApprovedUsers extends javax.swing.JFrame {
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1))
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2))
         );
 
         jPanel3.setBackground(new java.awt.Color(44, 116, 60));
@@ -235,29 +240,40 @@ public class ApprovedUsers extends javax.swing.JFrame {
             }
         });
 
+        jLabel7.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Cashier User Data");
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jadd, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jclear, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 541, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(16, 16, 16))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jadd, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jclear, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 541, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(16, 16, 16))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel7)
+                        .addGap(208, 208, 208))))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(24, 24, 24)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -266,7 +282,7 @@ public class ApprovedUsers extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(44, 116, 60));
@@ -715,45 +731,45 @@ public class ApprovedUsers extends javax.swing.JFrame {
                 || jage.getText().length() <= 0) {
 
         } //show the table...
-        else {
-            JOptionPane.showMessageDialog(null, "User Successfully Added!");
-            adduser cashregis = new adduser();
-            cashregis.setVisible(true);
-            cashregis.pack();
-            cashregis.setLocationRelativeTo(null);
-            cashregis.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-            this.dispose();
-
-            cashieruser();
-        }
-
-        try {
-            Statement st = con.createStatement();
-            String query1 = "select * from `cashier_users` ";
-            ResultSet rs1 = st.executeQuery(query1);
-
-            while (rs1.next()) {
-                //data wil added until finished..
-                String id = rs1.getString("Id");
-                String username1 = rs1.getString("Username");
-                String password1 = rs1.getString("Password");
-                String email_id1 = rs1.getString("Email_id");
-                String gender1 = rs1.getString("Gender");
-                String age1 = rs1.getString("Age");
-
-                //string array for store data into jtable..
-                String tbData[] = {id, username1, password1, email_id1, gender1, age1};
-                DefaultTableModel tblModel = (DefaultTableModel) jTable11.getModel();
-
-                //add string array data into jtable..
-                tblModel.addRow(tbData);
-
-            }
-
-            //            con.close();
-        } catch (SQLException ex) {
-            Logger.getLogger(adduser.class.getName()).log(Level.SEVERE, null, ex);
-        }
+//        else {
+//            JOptionPane.showMessageDialog(null, "User Successfully Added!");
+//            adduser cashregis = new adduser();
+//            cashregis.setVisible(true);
+//            cashregis.pack();
+//            cashregis.setLocationRelativeTo(null);
+//            cashregis.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+//            this.dispose();
+//
+//            cashieruser();
+//        }
+//
+//        try {
+//            Statement st = con.createStatement();
+//            String query1 = "select * from `cashier_users` ";
+//            ResultSet rs1 = st.executeQuery(query1);
+//
+//            while (rs1.next()) {
+//                //data wil added until finished..
+//                String id = rs1.getString("Id");
+//                String username1 = rs1.getString("Username");
+//                String password1 = rs1.getString("Password");
+//                String email_id1 = rs1.getString("Email_id");
+//                String gender1 = rs1.getString("Gender");
+//                String age1 = rs1.getString("Age");
+//
+//                //string array for store data into jtable..
+//                String tbData[] = {id, username1, password1, email_id1, gender1, age1};
+//                DefaultTableModel tblModel = (DefaultTableModel) jTable11.getModel();
+//
+//                //add string array data into jtable..
+//                tblModel.addRow(tbData);
+//
+//            }
+//
+//            //            con.close();
+//        } catch (SQLException ex) {
+//            Logger.getLogger(adduser.class.getName()).log(Level.SEVERE, null, ex);
+//        }
     }//GEN-LAST:event_jaddActionPerformed
 
     private void jclearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jclearActionPerformed
@@ -769,84 +785,84 @@ public class ApprovedUsers extends javax.swing.JFrame {
     private void jUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jUpdateActionPerformed
         // TODO add your handling code here:
 
-        DefaultTableModel model2 = (DefaultTableModel) jTable11.getModel();
-        int Myindex = jTable11.getSelectedRow();
-        int Mycolumn = jTable11.getSelectedColumn();
-
-        String value = model2.getValueAt(Myindex, Mycolumn).toString();
-        int id = Integer.parseInt(model2.getValueAt(Myindex, 0).toString());
-        String uname = jname.getText();
-        String pass = jpassword.getText();
-        String emai1 = jemailid.getText();
-        String gend = jgender.getText();
-        String agedd = jage.getText();
-
-        try {
-            pst = con.prepareStatement("UPDATE cashier_users set Username= ?, Password= ?, Email_id= ?, Gender= ?, Age= ? where Id= ?");
-            //
-            pst.setString(1, uname);
-            pst.setString(2, pass);
-            pst.setString(3, emai1);
-            pst.setString(4, gend);
-            pst.setString(5, agedd);
-            pst.setInt(6, id);
-
-            int k = pst.executeUpdate();
-
-            if (k == 1) {
-                JOptionPane.showMessageDialog(this, "User Updated");
-                jname.setText("");
-                jpassword.setText("");
-                jemailid.setText("");
-                jgender.setText("");
-                jage.setText("");
-                jname.requestFocus();
-
-                cashiersupdate();
-
-                jadd.setEnabled(true);
-
-            }
-        } catch (SQLException ex) {
-            Logger.getLogger(inventorypage.class.getName()).log(Level.SEVERE, null, ex);
-        }
+//        DefaultTableModel model2 = (DefaultTableModel) jTable11.getModel();
+//        int Myindex = jTable11.getSelectedRow();
+//        int Mycolumn = jTable11.getSelectedColumn();
+//
+//        String value = model2.getValueAt(Myindex, Mycolumn).toString();
+//        int id = Integer.parseInt(model2.getValueAt(Myindex, 0).toString());
+//        String uname = jname.getText();
+//        String pass = jpassword.getText();
+//        String emai1 = jemailid.getText();
+//        String gend = jgender.getText();
+//        String agedd = jage.getText();
+//
+//        try {
+//            pst = con.prepareStatement("UPDATE cashier_users set Username= ?, Password= ?, Email_id= ?, Gender= ?, Age= ? where Id= ?");
+//            //
+//            pst.setString(1, uname);
+//            pst.setString(2, pass);
+//            pst.setString(3, emai1);
+//            pst.setString(4, gend);
+//            pst.setString(5, agedd);
+//            pst.setInt(6, id);
+//
+//            int k = pst.executeUpdate();
+//
+//            if (k == 1) {
+//                JOptionPane.showMessageDialog(this, "User Updated");
+//                jname.setText("");
+//                jpassword.setText("");
+//                jemailid.setText("");
+//                jgender.setText("");
+//                jage.setText("");
+//                jname.requestFocus();
+//
+//                cashiersupdate();
+//
+//                jadd.setEnabled(true);
+//
+//            }
+//        } catch (SQLException ex) {
+//            Logger.getLogger(inventorypage.class.getName()).log(Level.SEVERE, null, ex);
+//        }
     }//GEN-LAST:event_jUpdateActionPerformed
 
     private void jDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jDeleteActionPerformed
         // TODO add your handling code here:
-        int row = jTable11.getSelectedRow();
-        String cell = jTable11.getModel().getValueAt(row, 0).toString();
-        String sql = "DELETE FROM `cashier_users` where Id= " + cell;
-
-        try {
-            pst = con.prepareStatement(sql);
-            pst.execute();
-            JOptionPane.showMessageDialog(null, "Successfully Deleted!");
-            updatecashierusers();
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e);
-        } finally {
-            try {
-                pst.close();
-                rs.close();
-
-            } catch (Exception e) {
-            }
-
-            DefaultTableModel model = (DefaultTableModel) jTable11.getModel();
-            //delete row
-            if (jTable11.getSelectedRowCount() == 1) {
-                //if single row is selected then delete
-                model.removeRow(jTable11.getSelectedRow());
-                jname.setText("");
-                jpassword.setText("");
-                jemailid.setText("");
-                jgender.setText("");
-                jage.setText("");
-            }
-        }
-        jadd.setEnabled(true);
+//        int row = jTable11.getSelectedRow();
+//        String cell = jTable11.getModel().getValueAt(row, 0).toString();
+//        String sql = "DELETE FROM `cashier_users` where Id= " + cell;
+//
+//        try {
+//            pst = con.prepareStatement(sql);
+//            pst.execute();
+//            JOptionPane.showMessageDialog(null, "Successfully Deleted!");
+//            updatecashierusers();
+//
+//        } catch (Exception e) {
+//            JOptionPane.showMessageDialog(null, e);
+//        } finally {
+//            try {
+//                pst.close();
+//                rs.close();
+//
+//            } catch (Exception e) {
+//            }
+//
+//            DefaultTableModel model = (DefaultTableModel) jTable11.getModel();
+//            //delete row
+//            if (jTable11.getSelectedRowCount() == 1) {
+//                //if single row is selected then delete
+//                model.removeRow(jTable11.getSelectedRow());
+//                jname.setText("");
+//                jpassword.setText("");
+//                jemailid.setText("");
+//                jgender.setText("");
+//                jage.setText("");
+//            }
+//        }
+//        jadd.setEnabled(true);
     }//GEN-LAST:event_jDeleteActionPerformed
 
     private void jPanel12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel12MouseEntered
@@ -917,6 +933,7 @@ public class ApprovedUsers extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
@@ -928,6 +945,7 @@ public class ApprovedUsers extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
