@@ -435,7 +435,7 @@ public class category extends javax.swing.JFrame {
         jLabel31.setText("Book Name");
 
         jLabel33.setFont(new java.awt.Font("Segoe UI Historic", 0, 14)); // NOI18N
-        jLabel33.setText("Quantity");
+        jLabel33.setText("Buying Price");
 
         jLabel36.setFont(new java.awt.Font("Segoe UI Historic", 0, 14)); // NOI18N
         jLabel36.setText("Description");
@@ -444,7 +444,7 @@ public class category extends javax.swing.JFrame {
         jLabel37.setText("Quantity");
 
         jLabel38.setFont(new java.awt.Font("Segoe UI Historic", 0, 14)); // NOI18N
-        jLabel38.setText("Quantity");
+        jLabel38.setText("Selling Price");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
