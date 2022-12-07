@@ -4,6 +4,8 @@
  */
 package FaToTab;
 
+import java.awt.Color;
+
 /**
  *
  * @author Student.Admin
@@ -510,32 +512,32 @@ public class adduser extends javax.swing.JFrame {
 
     private void jPanel11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MouseEntered
         // TODO add your handling code here:
-        jPanel10.setBackground(new Color(35, 77, 32));
+        jPanel11.setBackground(new Color(35, 77, 32));
     }//GEN-LAST:event_jPanel11MouseEntered
 
     private void jPanel11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MouseExited
         // TODO add your handling code here:
-        jPanel10.setBackground(new Color(44, 116, 60));
+        jPanel11.setBackground(new Color(44, 116, 60));
     }//GEN-LAST:event_jPanel11MouseExited
 
     private void jPanel13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel13MouseEntered
         // TODO add your handling code here:
-        jPanel12.setBackground(new Color(35, 77, 32));
+        jPanel13.setBackground(new Color(35, 77, 32));
     }//GEN-LAST:event_jPanel13MouseEntered
 
     private void jPanel13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel13MouseExited
         // TODO add your handling code here:
-        jPanel12.setBackground(new Color(44, 116, 60));
+        jPanel13.setBackground(new Color(44, 116, 60));
     }//GEN-LAST:event_jPanel13MouseExited
 
     private void jPanel14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel14MouseEntered
         // TODO add your handling code here:
-        jPanel13.setBackground(new Color(35, 77, 32));
+        jPanel14.setBackground(new Color(35, 77, 32));
     }//GEN-LAST:event_jPanel14MouseEntered
 
     private void jPanel14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel14MouseExited
         // TODO add your handling code here:
-        jPanel13.setBackground(new Color(44, 116, 60));
+        jPanel14.setBackground(new Color(44, 116, 60));
     }//GEN-LAST:event_jPanel14MouseExited
 
     private void jaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jaddActionPerformed

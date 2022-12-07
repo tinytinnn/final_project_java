@@ -4,6 +4,8 @@
  */
 package FaToTab;
 
+import java.awt.Color;
+
 /**
  *
  * @author Student.Admin
@@ -570,22 +572,22 @@ public class inventorypage extends javax.swing.JFrame {
 
     private void Home4HomeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Home4HomeMouseEntered
         // TODO add your handling code here:
-        Home.setBackground(new Color(35, 77, 32));
+        Home4.setBackground(new Color(35, 77, 32));
     }//GEN-LAST:event_Home4HomeMouseEntered
 
     private void Home4HomeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Home4HomeMouseExited
         // TODO add your handling code here:
-        Home.setBackground(new Color(44, 116, 60));
+        Home4.setBackground(new Color(44, 116, 60));
     }//GEN-LAST:event_Home4HomeMouseExited
 
     private void jPanel20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel20MouseEntered
         // TODO add your handling code here:
-        jPanel11.setBackground(new Color(35, 77, 32));
+        jPanel20.setBackground(new Color(35, 77, 32));
     }//GEN-LAST:event_jPanel20MouseEntered
 
     private void jPanel20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel20MouseExited
         // TODO add your handling code here:
-        jPanel11.setBackground(new Color(44, 116, 60));
+        jPanel20.setBackground(new Color(44, 116, 60));
     }//GEN-LAST:event_jPanel20MouseExited
 
     private void jclearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jclearActionPerformed
