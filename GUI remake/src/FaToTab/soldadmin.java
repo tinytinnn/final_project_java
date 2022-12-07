@@ -632,6 +632,7 @@ public class soldadmin extends javax.swing.JFrame {
 
         jLabel28.setBackground(new java.awt.Color(255, 153, 51));
         jLabel28.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(255, 0, 0));
         jLabel28.setText("Net Profit");
 
         jprofit.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
